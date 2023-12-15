@@ -1,0 +1,115 @@
+body {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    zoom: 80%; /* 페이지를 80% 크기로 축소 */
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid #000000;
+    box-sizing: border-box;
+    width: 1200px;  /* 가로 크기를 800px로 설정 */
+    height: 900px;  /* 세로 크기를 500px로 설정 */
+}
+
+
+.map-wrapper {
+    width: 105%;
+    height: 90%;
+    overflow: hidden;
+    position: absolute; /* 이미지를 절대 위치로 설정 */
+    top: 80px; /* 이미지의 위치를 조정 */
+    left: 35px;
+}
+
+.map-wrapper img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+}
+
+.title {
+    position: absolute;
+    top: 9px; /* 제목의 위치를 조정 */
+    left: 390px;
+}
+
+.title h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.participants {
+    position: absolute;
+    bottom: 0px; /* 화면 아래쪽으로부터 20px 떨어진 위치에 배치 */
+    left: 60%; /* 화면 가운데에 배치 */
+    transform: translateX(-0%); /* 왼쪽으로 50% 이동하여 가운데 정렬 */
+    font-size: 1.0em;
+}
+
+
+/*.overlay-button {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(99, 99, 99, 0); /* 투명한 배경색 */
+    /*border: 1px solid black;
+    padding: 10px;
+    cursor: pointer;
+    / opacity: 0; 처음에는 투명하게 설정 */
+    /*transition: opacity 0.3s ease;
+/*}*/
+
+.overlay-button {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(99, 99, 99, 0); /* 투명한 배경색 */
+    border: 1px solid black;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.overlay-button:hover {
+    background-color: rgba(99, 99, 99, 0.5); /* 마우스를 올렸을 때의 배경색 */
+}
+
+
+
+#button1 {
+    top: 0px;
+    left: 0px;
+    width: 475px; /* 너비를 150px로 설정 */
+    height: 400px; /* 높이를 150px로 설정 */
+}
+
+
+#button2 {
+    top: 0px;
+    left: 475px;
+    width: 653px;
+    height: 400px;
+}
+
+
+#button3 {
+    top: 400px;
+    left: 0px;
+    width: 570px; /* 너비를 150px로 설정 */
+    height: 324px; /* 높이를 150px로 설정 */
+}
+
+#button4 {
+    top: 400px;
+    left: 570px;
+    width: 558px;
+    height: 324px;
+}

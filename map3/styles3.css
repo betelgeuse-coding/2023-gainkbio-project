@@ -1,0 +1,106 @@
+body {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    zoom: 80%; /* 페이지를 80% 크기로 축소 */
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid #000000;
+    box-sizing: border-box;
+    width: 1200px;  /* 가로 크기를 800px로 설정 */
+    height: 900px;  /* 세로 크기를 500px로 설정 */
+}
+
+.map-wrapper {
+    width: 105%;
+    height: 90%;
+    overflow: hidden;
+    position: absolute; /* 이미지를 절대 위치로 설정 */
+    top: 120px; /* 이미지의 위치를 조정 */
+    left: 35px;
+}
+
+.map-wrapper img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+}
+
+.title {
+    position: fixed; /* 수정된 코드 */
+    top: 3.5%; /* 제목의 위치를 조정 */
+    left: 0; /* 수정된 코드 */
+    right: 0; /* 추가된 코드 */
+    text-align: center; /* 추가된 코드 */
+    z-index: 9999; /* z-index 값을 크게 설정하여 제목이 항상 위에 위치하도록 함 */
+}
+
+.title h1 {
+    font-size: 3em;
+    margin: 0;
+    white-space: nowrap; /* 추가된 코드 */
+}
+
+.grid {
+    z-index: 0; /* 추가된 코드 */
+}
+
+.legend {
+    position: fixed;
+    left: 450px;
+    top: 930px;
+}
+
+.legend ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.legend li {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.black-square,.sandybrown-square, .yellow-circle {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+    border: 2px solid #333;
+}
+
+.sandybrown-square {
+    background: sandybrown;
+}
+
+.black-square {
+    background: black;
+}
+
+.yellow-circle {
+    background: yellow;
+    border-radius: 50%;
+    background: linear-gradient(to right, yellow, orange);
+}
+.legend a {
+    color: black;
+    text-decoration: none;
+    transition: 0.3s; /* 애니메이션 효과를 위한 속성 */
+}
+
+.legend a:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* 반투명한 회색 */
+    padding: 5px; /* 박스 내부 여백 */
+    border-radius: 5px; /* 박스 모서리 둥글게 */
+}
+
